@@ -26,8 +26,7 @@ let nickRemoveEnabled = false;
 let gcAutoRemoveEnabled = false;
 let currentCookies = null;
 let reconnectAttempt = 0;
-const signature = `\n                      ♦♦♦♦♦\n            🕊️ ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑𝐊 𝐑𝐀𝐉𝐀 ≛◙ﾆﾆ◙◗◗  𝗗0𝗡 0𝗡𝗙||𝗥3 ; ♥️
-const separator = `\n---😈---😈---😈---😈---😈---😈---`;
+const signature = `\n                      ♦♦♦♦♦\n            🕊️ ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑𝐊 𝐑𝐀𝐉𝐀 ≛◙ﾆﾆ◙◗◗  𝗗0𝗡 0𝗡𝗙||𝗥3 ; 
 
 // --- UTILITY FUNCTIONS ---
 function emitLog(message, isError = false) {
