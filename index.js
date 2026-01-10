@@ -26,7 +26,8 @@ let nickRemoveEnabled = false;
 let gcAutoRemoveEnabled = false;
 let currentCookies = null;
 let reconnectAttempt = 0;
-const signature = `\n                      ♦♦♦♦♦\n            🕊️ ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑𝐊 𝐑𝐀𝐉𝐀 ≛◙ﾆﾆ◙◗◗  𝗗0𝗡 0𝗡𝗙||𝗥3 ; 
+const signature = `\n                      ♦♦♦♦♦\n            🕊️ ─╼≛◉🎲╮👑╭🎲◉≛╾─ ◖◖◙ﾆﾆ◙≛𝐑𝐊 𝐑𝐀𝐉𝐀 ≛◙ﾆﾆ◙◗◗  𝗗0𝗡 0𝗡𝗙||𝗥3 ; ♥️
+const separator = `\n---😈---😈---😈---😈---😈---😈---`;
 
 // --- UTILITY FUNCTIONS ---
 function emitLog(message, isError = false) {
@@ -166,7 +167,7 @@ async function setBotNicknamesInGroups() {
 
 async function sendStartupMessage() {
   if (!botAPI) return;
-  const startupMessage = `😈𝕎𝔸𝕊𝕌 𝕂𝔸 𝔹𝕆𝕋😈`;
+  const startupMessage = `😈𝗔𝗟𝗟 𝗛𝗔𝗧𝗘𝗥 𝗞𝗜 𝗠𝗔𝗔 𝗖𝗛𝗢𝗗𝗡𝗘 𝗩𝗔𝗟𝗔 𝗥𝗞 𝗗𝗔𝗥𝗜𝗡𝗗𝗔 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘😈`;
   try {
     const threads = await botAPI.getThreadList(100, null, ['GROUP']);
     for (const thread of threads) {
